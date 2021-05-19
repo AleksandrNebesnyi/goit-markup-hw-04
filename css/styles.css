@@ -33,6 +33,8 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -47,6 +49,14 @@ img {
 
 /* Навигация */
 
+.page-header{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #ECECEC;
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -82,7 +92,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  background-color: wheat;
+
 }
 
 .nav-information {
@@ -114,7 +124,7 @@ img {
 .hero {
   background-color: #2f303a;
 
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 
   text-align: center;
 }
@@ -147,15 +157,16 @@ img {
 /* Преимущества */
 
 .advantages {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .advantages-list {
   display: flex;
-  /* justify-content: space-between; */
+
 }
 
 .advantages-list .item {
-  background-color: springgreen;
+  width: 270px;
+  /* background-color: springgreen; */
 }
 .advantages-list .item:not(:last-child) {
   margin-right: 30px;
@@ -171,7 +182,6 @@ img {
 
 .advanteges-description {
   display: block;
-
   line-height: 1.7;
 }
 
@@ -184,7 +194,7 @@ img {
   color: var(--secondary-text-color);
 
   margin-top: 0px;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.2;
@@ -200,12 +210,6 @@ img {
 }
 
 /* Наша команда */
-.team-list li {
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 30px;
-  padding: 0px;
-}
 
 .team-title {
   color: var(--secondary-text-color);
@@ -217,6 +221,24 @@ img {
   line-height: 1.2;
   text-align: center;
 }
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list item {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 270px;
+  background-color: cadetblue;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-images {
   margin-bottom: 30px;
 }
@@ -268,16 +290,14 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* .footer-tel {
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-} */
+
 /* Портфолио */
 
 /* Кнопки портфолио */
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -311,16 +331,15 @@ img {
   margin-top: calc (-1 * var(--card-set-gap));
 }
 
-/* .project-images {
- 
-  margin-bottom: 20px;
-} */
+.project .card {
+  border-bottom: 1px solid #EEEEEE;
+}
+
 .project > .card {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  /* border: 2px solid green; */
-}
+ }
 
 .card-image {
   margin-bottom: 20px;
@@ -335,10 +354,9 @@ img {
 
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-decoration: none;
-  /* border: 2px solid red; */
-}
+  }
 
 .project-description {
   color: var(--primery-text-color);
@@ -348,13 +366,8 @@ img {
 
   font-size: 16px;
   line-height: 1.9;
-  /* border: 2px solid teal; */
-}
+ }
 
 .card-content {
   padding: 20px 24px;
-  /* border: 2px solid tomato; */
-}
-/* .project-description:last-child {
-  margin-bottom: 0px;
-} */
+ }
