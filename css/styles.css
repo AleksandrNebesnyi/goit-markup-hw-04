@@ -94,6 +94,9 @@ img {
   text-decoration: none;
 }
 
+.nav-link-list.current {
+  color: var(--accent-color);
+}
 .nav-information {
   display: flex;
   margin-left: auto;
@@ -126,15 +129,24 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url("../images/fotohero.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .hero-title {
-  color: var(---wite-color);
-  margin-top: 0px;
+  color: var(--wite-color);
+
+  display: block;
+  margin: 0 auto;
+  width: 696px;
+  padding-top: 200px;
   margin-bottom: 30px;
 
   text-align: center;
@@ -147,6 +159,8 @@ img {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
 
+  display: block;
+  margin: 0 auto;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
