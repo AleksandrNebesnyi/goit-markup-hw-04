@@ -15,7 +15,7 @@
   --wite-color: #ffffff;
 }
 body {
-  background-color: var(--primery-bg-color);
+  background-color: var(--wite-color);
   color: var(--primery-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -94,9 +94,6 @@ img {
   text-decoration: none;
 }
 
-.nav-link-list.current {
-  color: var(--accent-color);
-}
 .nav-information {
   display: flex;
   margin-left: auto;
@@ -115,49 +112,20 @@ img {
   text-decoration: none;
 }
 
-.nav-information .item::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;  
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.nav-information .item:nth-child(1)::before{
-  background-image: url("../images/svg/envelope.svg");
-}
-
-.nav-information .item:nth-child(2)::before{
-  width: 10px;
-  height: 16px;
-  background-image: url("../images/svg/smartphone.svg");
-}
 .nav-link a:hover,
 .nav-link a:focus,
 .nav-information a:hover,
-.nav-information a:focus
-{
+.nav-information a:focus {
   color: var(--accent-color);
 }
 
-
 /* Герой */
-
 .hero {
-  max-width: 1600px;
-  height:600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #2f303a;
+  height: 600px;
 
-  background-color: #C4C4C4;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url("../images/fotohero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  }
+  text-align: center;
+}
 .hero-title {
   color: var(--wite-color);
 
@@ -165,7 +133,7 @@ img {
 
   width: 696px;
   margin: 0 auto;
- 
+
   padding-top: 200px;
   margin-bottom: 30px;
 
@@ -175,14 +143,12 @@ img {
   line-height: 1.4;
   letter-spacing: 0.06em;
 }
-
 .button-hero {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
 
   display: block;
   margin: 0 auto;
-
 
   font-family: inherit;
   font-weight: 700;
@@ -199,41 +165,21 @@ img {
 /* Преимущества */
 
 .advantages {
-  /* margin-bottom: 94px; */
 }
+
 .advantages-list {
   display: flex;
 }
-
+.container.main {
+  padding-bottom: 0px;
+}
 .advantages-list .item {
   width: 270px;
-
+  /* background-color: springgreen; */
 }
 .advantages-list .item:not(:last-child) {
   margin-right: 30px;
 }
-
-.advantages-list .item::before {
-  display: block;
-  content:"" ;
-  height: 120px;
-  background-color: var(--primery-bg-color);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.advantages-list .item:nth-child(1)::before {
-  background-image: url("../images/svg/antenna\ 1.svg");
-}
-.advantages-list .item:nth-child(2)::before {
-  background-image: url("../images/svg/clock\ 1.svg");
-}
-.advantages-list .item:nth-child(3)::before {
-  background-image: url("../images/svg/diagram\ 1.svg");
-  }
-.advantages-list .item:nth-child(4)::before {
-  background-image: url("../images/svg/astronaut\ 1.svg");
-  }
 
 .advantages-title {
   color: var(--secondary-text-color);
@@ -250,7 +196,6 @@ img {
 
 /* Примеры работ */
 .example {
-  /* margin-bottom: 50px; */
 }
 
 .example-title {
@@ -307,8 +252,9 @@ img {
 }
 
 .team-list-title {
+  display: block;
   color: var(--secondary-text-color);
-
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -317,6 +263,8 @@ img {
 }
 
 .team-description {
+  display: block;
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -328,8 +276,15 @@ img {
 
 .footer {
   background-color: #2f303a;
+  /* border: 1px solid red; */
+}
+.container.item {
+  margin: 0px;
+  padding: 0px;
   padding-top: 60px;
+  padding-left: 215px;
   padding-bottom: 60px;
+  /* border: 1px solid green; */
 }
 
 .footer-logo {
