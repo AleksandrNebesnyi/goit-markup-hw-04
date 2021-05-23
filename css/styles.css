@@ -313,7 +313,15 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
+.regular-client-button {
+  padding: 0;
+  border: none;
+  /* width: 100px;
+  height: 100px; */
+  color: #2a2a2a;
+  /* border-radius: 50%; */
+  /* background-color: teal; */
+}
 .regular-client-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -321,9 +329,9 @@ img {
   padding: 16px 32px;
 }
 
-.regular-client-item:hover {
+/* .regular-client-item:hover {
   color: var(--accent-color);
-}
+} */
 
 /* Футер */
 
