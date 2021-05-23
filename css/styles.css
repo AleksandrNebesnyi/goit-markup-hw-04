@@ -115,7 +115,9 @@ img {
 .nav-link a:hover,
 .nav-link a:focus,
 .nav-information a:hover,
-.nav-information a:focus {
+.nav-information a:focus,
+.icon-envelop:hover,
+.icon-envelop:focus {
   color: var(--accent-color);
 }
 
@@ -184,9 +186,17 @@ img {
 .container.main {
   padding-bottom: 0px;
 }
+.conteiner-advantages-icon {
+  background-color: #f5f4fa;
+  padding: 20px 100px;
+  margin-bottom: 30px;
+}
+.advantages-icon {
+  display: block;
+  margin: 0 auto;
+}
 .advantages-list .item {
   width: 270px;
-  /* background-color: springgreen; */
 }
 .advantages-list .item:not(:last-child) {
   margin-right: 30px;
@@ -281,6 +291,38 @@ img {
 
   font-size: 16px;
   line-height: 1.2;
+}
+/* Постоянные клиенты */
+
+.regular-client-title {
+  color: var(--secondary-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.regular-client-list {
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
+}
+.regular-client-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.regular-client-item:not(:last-child) {
+  margin-right: 30px;
+}
+.regular-client-icon {
+  padding: 16px 32px;
+}
+
+.regular-client-item:hover {
+  color: var(--accent-color);
 }
 
 /* Футер */
