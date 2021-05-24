@@ -298,28 +298,34 @@ img {
   padding: 0px;
   margin: 0px;
   outline: 1px solid black;
-  list-style: none;
- 
+   }
 
-}
 .team-icon {
   padding: 0;
   border: none;
   width: 44px;
   height: 44px;
-  color: #2a2a2a;
+  color: #AFB1B8;
   border-radius: 50%;
-  background-color: teal;
- 
+ }
 
-}
-.icon-social-links {
-  /* display: inline-block; */
+.icon-social-links
+ {
+  display: inline-block;
+  
+  fill: currentColor;
   width: 20px;
   height: 20px;
-  /* padding: 12px; */
+  }
 
-}
+  .team-icon:hover,
+  .team-icon:focus,
+  .icon-social-links:hover,
+  .icon-social-links:focus
+   {
+    background-color:var(--accent-color);
+    fill:#ffffff 
+  } 
 /* Постоянные клиенты */
 
 .regular-client-title {
