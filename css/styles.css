@@ -287,10 +287,38 @@ img {
   display: block;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.2;
+}
+
+.team-icon-block {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  outline: 1px solid black;
+  list-style: none;
+ 
+
+}
+.team-icon {
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  color: #2a2a2a;
+  border-radius: 50%;
+  background-color: teal;
+ 
+
+}
+.icon-social-links {
+  /* display: inline-block; */
+  width: 20px;
+  height: 20px;
+  /* padding: 12px; */
+
 }
 /* Постоянные клиенты */
 
@@ -310,29 +338,36 @@ img {
   justify-content: center;
 }
 .regular-client-item {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  background-color: #E5E5E5;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-.regular-client-button {
-  padding: 0;
-  border: none;
-  /* width: 100px;
-  height: 100px; */
-  color: #2a2a2a;
-  /* border-radius: 50%; */
-  /* background-color: teal; */
-}
+  width: 170px;
+  cursor: pointer;
+} 
+
 .regular-client-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .regular-client-icon {
+  display: inline-block;
   padding: 16px 32px;
+  
+ }
+.regular-client-svg{
+  fill: #AFB1B8;
 }
-
-/* .regular-client-item:hover {
-  color: var(--accent-color);
-} */
-
+.regular-client-item:hover,
+.regular-client-item:focus,
+.regular-client-svg:hover,
+.regular-client-svg:focus
+ {
+  border-color: var(--accent-color);
+  fill:var(--accent-color);
+}
 /* Футер */
 
 .footer {
