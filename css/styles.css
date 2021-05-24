@@ -298,34 +298,32 @@ img {
   padding: 0px;
   margin: 0px;
   outline: 1px solid black;
-   }
+}
 
 .team-icon {
   padding: 0;
   border: none;
   width: 44px;
   height: 44px;
-  color: #AFB1B8;
+  color: #afb1b8;
   border-radius: 50%;
- }
+}
 
-.icon-social-links
- {
+.icon-social-links {
   display: inline-block;
-  
+
   fill: currentColor;
   width: 20px;
   height: 20px;
-  }
+}
 
-  .team-icon:hover,
-  .team-icon:focus,
-  .icon-social-links:hover,
-  .icon-social-links:focus
-   {
-    background-color:var(--accent-color);
-    fill:#ffffff 
-  } 
+.team-icon:hover,
+.team-icon:focus,
+.icon-social-links:hover,
+.icon-social-links:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
 /* Постоянные клиенты */
 
 .regular-client-title {
@@ -338,21 +336,25 @@ img {
   line-height: 1.16;
   text-align: center;
 }
+
 .regular-client-list {
-  margin-bottom: 94px;
   display: flex;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid black;
+  list-style: none;
+  background-color: #ffffff;
+  margin-bottom: 94px;
   justify-content: center;
 }
+
 .regular-client-item {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  background-color: #E5E5E5;
+  padding: 0;
+  margin: 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  cursor: pointer;
-} 
+  margin-left: 30px;
+}
 
 .regular-client-item:not(:last-child) {
   margin-right: 30px;
@@ -361,18 +363,45 @@ img {
 .regular-client-icon {
   display: inline-block;
   padding: 16px 32px;
-  
- }
-.regular-client-svg{
-  fill: #AFB1B8;
 }
+.regular-client-svg {
+  fill: #afb1b8;
+}
+
+/* .regular-client-list {
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
+}
+.regular-client-item {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  background-color: #e5e5e5;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  cursor: pointer;
+}
+
+.regular-client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-client-icon {
+  display: inline-block;
+  padding: 16px 32px;
+}
+.regular-client-svg {
+  fill: #afb1b8;
+} */
+
 .regular-client-item:hover,
 .regular-client-item:focus,
 .regular-client-svg:hover,
-.regular-client-svg:focus
- {
+.regular-client-svg:focus {
   border-color: var(--accent-color);
-  fill:var(--accent-color);
+  fill: var(--accent-color);
 }
 /* Футер */
 
