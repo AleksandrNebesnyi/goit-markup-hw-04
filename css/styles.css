@@ -50,42 +50,45 @@ img {
 /* Навигация */
 
 .page-header {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   border-bottom: 1px solid #ececec;
 }
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-.nav {
-  display: flex;
-}
-.logo {
-  margin: auto;
 
+.logo {
+  margin-left: 215px;
+
+  color:var( --secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
+  
 }
 
-.nav-link {
+ .logo-part-first {
+   color:var(--accent-color);
+ }
+ 
+.main-nav, .nav, .nav-link, .nav-information  {
   display: flex;
-  margin-left: 93px;
+  align-items: center;
+} 
+.main-nav {
+  align-items: center;
+  
 }
+.nav-link  {
+  margin-left: 93px;
+ }
+
 .nav-link .item:not(:last-child) {
   margin-right: 50px;
-}
+} 
 
-.nav-link-list {
-  color: var(--secondary-text-color);
-
+.nav-link .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--secondary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -94,15 +97,15 @@ img {
   text-decoration: none;
 }
 
-.nav-information {
-  display: flex;
-  margin-left: auto;
+.nav-link .link.current {
+color: var(--accent-color);
 }
 
-.nav-information .item + .item {
-  margin-left: 50px;
-}
-.nav-information-list {
+.nav-information .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primery-text-color);
 
   font-weight: 500;
@@ -112,12 +115,18 @@ img {
   text-decoration: none;
 }
 
+.nav-information  {
+  margin-left: auto;
+  margin-right: 215px;
+}
+
+.nav-information .item + .item{
+  margin-left: 50px;
+}
 .nav-link a:hover,
 .nav-link a:focus,
 .nav-information a:hover,
-.nav-information a:focus,
-.icon-envelop:hover,
-.icon-envelop:focus {
+.nav-information a:focus {
   color: var(--accent-color);
 }
 
@@ -258,7 +267,8 @@ img {
 
 .team-list item {
   display: inline-block;
-  margin: 0px;
+  
+  margin: 0px auto;
   padding: 0px;
   width: 270px;
   background-color: cadetblue;
@@ -301,7 +311,8 @@ img {
 }
 
 .team-icon {
-  padding: 0;
+  display: block;
+  padding:16px;
   border: none;
   width: 44px;
   height: 44px;
@@ -407,24 +418,29 @@ img {
 
 .footer {
   background-color: #2f303a;
-  /* border: 1px solid red; */
 }
-.container.item {
+.footer-conteiner {
   margin: 0px;
-  padding: 0px;
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 60px;
-  /* border: 1px solid green; */
 }
 
 .footer-logo {
-  display: inline-block;
+  display: block;
+  color:var( --secondary-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
   margin-bottom: 20px;
 }
+
 .footer-list li {
   color: var(--wite-color);
   line-height: 1.7;
+}
+.footer-list li:not(:last-child) {
   margin-bottom: 9px;
 }
 
