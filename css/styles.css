@@ -54,33 +54,34 @@ img {
 .logo {
   margin-left: 215px;
 
-  color:var( --secondary-text-color);
+  color: var(--secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  
 }
 
- .logo-part-first {
-   color:var(--accent-color);
- }
- 
-.main-nav, .nav, .nav-link, .nav-information  {
+.logo-part-first {
+  color: var(--accent-color);
+}
+
+.main-nav,
+.nav,
+.nav-link,
+.nav-information {
   display: flex;
   align-items: center;
-} 
+}
 .main-nav {
   align-items: center;
-  
 }
-.nav-link  {
+.nav-link {
   margin-left: 93px;
- }
+}
 
 .nav-link .item:not(:last-child) {
   margin-right: 50px;
-} 
+}
 
 .nav-link .link {
   display: block;
@@ -96,7 +97,7 @@ img {
 }
 
 .nav-link .link.current {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .nav-information .link {
@@ -113,7 +114,7 @@ color: var(--accent-color);
   text-decoration: none;
 }
 
-.nav-information  {
+.nav-information {
   margin-left: auto;
   margin-right: 215px;
 }
@@ -127,19 +128,17 @@ color: var(--accent-color);
 .nav-information .item :hover,
 .nav-information :focus {
   color: var(--accent-color);
-  fill:var(--accent-color) ;
+  fill: var(--accent-color);
 }
 .nav-information-icon {
-  display:inline-block;
-  fill:var(--primery-text-color);
+  display: inline-block;
+  fill: var(--primery-text-color);
   margin-right: 10px;
-  
 }
 
 .nav-information .item {
   display: inline-flex;
   align-items: center;
-
 }
 
 /* Герой */
@@ -279,11 +278,12 @@ color: var(--accent-color);
 
 .team-list item {
   display: inline-block;
-  
+
   margin: 0px auto;
   padding: 0px;
   width: 270px;
   background-color: cadetblue;
+  outline: 1px solid black;
 }
 
 .team-list .item:not(:last-child) {
@@ -317,21 +317,32 @@ color: var(--accent-color);
 
 .team-icon-block {
   display: flex;
-  padding: 0px;
-  margin: 0px;
-  outline: 1px solid black;
+  justify-content: space-evenly;
+  /* padding: 0px; */
+  /* margin: 0px; */
+  /* outline: 1px solid black; */
 }
 
 .team-icon {
   display: block;
-  padding:16px;
+
+  padding: 12px;
   border: none;
   width: 44px;
   height: 44px;
   color: #afb1b8;
   border-radius: 50%;
 }
+.team-icon:not(:last-child) {
+  margin-right: 10px;
+}
+/* .team-icon:nth-child(1) {
+  padding-left: 50px;
+}
 
+.team-icon:nth-child(4) {
+  padding-right: 50px;
+} */
 .icon-social-links {
   display: inline-block;
 
@@ -440,7 +451,7 @@ color: var(--accent-color);
 
 .footer-logo {
   display: block;
-  color:var( --secondary-text-color);
+  color: var(--secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
