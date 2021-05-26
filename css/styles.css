@@ -120,14 +120,28 @@ color: var(--accent-color);
   margin-right: 215px;
 }
 
-.nav-information .item + .item{
+.nav-information .item:last-child {
   margin-left: 50px;
 }
+
 .nav-link a:hover,
 .nav-link a:focus,
-.nav-information a:hover,
-.nav-information a:focus {
+.nav-information .item :hover,
+.nav-information :focus {
   color: var(--accent-color);
+  fill:var(--accent-color) ;
+}
+.nav-information-icon {
+  display:inline-block;
+  fill:var(--primery-text-color);
+  margin-right: 10px;
+  
+}
+
+.nav-information .item {
+  display: inline-flex;
+  align-items: center;
+
 }
 
 /* Герой */
