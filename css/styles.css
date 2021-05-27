@@ -287,18 +287,21 @@ color: var(--accent-color);
   flex-wrap: wrap;
 }
 
-.team-list item {
+.team-list .item {
   display: inline-block;
-  
+
   margin: 0px auto;
   padding: 0px;
   width: 270px;
-  background-color: cadetblue;
+  
+  box-shadow: 0 2px 1px  rgba(0, 0, 0, 0.2), 
+  0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-list .item:not(:last-child) {
   margin-right: 30px;
 }
+
 
 .team-images {
   margin-bottom: 30px;
@@ -329,7 +332,7 @@ color: var(--accent-color);
   display: flex;
   padding-left: 30px;
   padding-right: 30px;
-  outline: 1px solid black;
+  
 }
 
 .team-icon {
@@ -460,13 +463,31 @@ color: var(--accent-color);
 .footer-link-title {
   display: block;
   color: var(--wite-color);
-  /* text-align: center; */
+  margin: 0;
+  margin-bottom: 20px;
   /* margin-top: 0px;
   margin-bottom: 10px; */
   font-size: 14px;
   line-height: 1.14;
-
 }
+.footer-link-list{
+  display: flex;
+   justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid tomato;
+}
+
+/* .team-icon-footer {
+  display: block;
+  padding:12px;
+  border: none;
+  width: 44px;
+  height: 44px;
+  color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+} */
+
+
 /* Портфолио */
 
 /* Кнопки портфолио */
@@ -493,6 +514,8 @@ color: var(--accent-color);
 .button:focus {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08), 
+  0 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Проекты */
@@ -547,3 +570,8 @@ color: var(--accent-color);
 .card-content {
   padding: 20px 24px;
 }
+ .project .card:hover {
+
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06), 
+  0 1px 1px rgba(0, 0, 0, 0.12);
+ }
