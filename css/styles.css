@@ -332,7 +332,7 @@ color: var(--accent-color);
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
-  /* color: #afb1b8 ; */
+  
   
 }
 
@@ -358,12 +358,11 @@ color: var(--accent-color);
 }
 
 .team-icon:hover,
-.team-icon:focus
-/* .icon-social-links:hover,
-.icon-social-links:focus { */{
+.team-icon:focus{
   background-color: var(--accent-color);
   fill:var(--wite-color);
 }
+
 /* Постоянные клиенты */
 
 .regular-client-title {
@@ -379,38 +378,41 @@ color: var(--accent-color);
 
 .regular-client-list {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color:var(--wite-color);
   margin-bottom: 94px;
-
-  border: 1px solid tomato;
+  color:#AFB1B8;
 }
 
 .regular-client-item {
- 
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 32px;
+  cursor: pointer;
 }
 
+.regular-client-link{
+  display: block;
+  fill:#afb1b8; 
+}
 .regular-client-item:not(:last-child) {
   margin-right: 30px;
 }
 
-
-
 .regular-client-svg {
-    color:currentColor;
- /* padding: 16px 32px; */
-  /* fill: #afb1b8; */
+  color: currentColor;
 }
 
 .regular-client-item:hover,
 .regular-client-item:focus,
 .regular-client-svg:hover,
-.regular-client-svg:focus {
+.regular-client-svg:focus
+{
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
+
 /* Футер */
 
 .footer {
