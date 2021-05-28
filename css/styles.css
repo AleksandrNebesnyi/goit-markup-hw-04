@@ -329,8 +329,10 @@ color: var(--accent-color);
 
 .team-icon-block {
   display: flex;
+  align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  /* color: #afb1b8 ; */
   
 }
 
@@ -340,7 +342,7 @@ color: var(--accent-color);
   border: none;
   width: 44px;
   height: 44px;
-  color: #afb1b8;
+  fill: #afb1b8 ;
   border-radius: 50%;
 }
 
@@ -350,16 +352,15 @@ color: var(--accent-color);
 
 .icon-social-links {
   display: inline-block;
-
-  fill: currentColor;
+  color: currentColor;
   width: 20px;
   height: 20px;
 }
 
 .team-icon:hover,
-.team-icon:focus,
-.icon-social-links:hover,
-.icon-social-links:focus {
+.team-icon:focus
+/* .icon-social-links:hover,
+.icon-social-links:focus { */{
   background-color: var(--accent-color);
   fill:var(--wite-color);
 }
