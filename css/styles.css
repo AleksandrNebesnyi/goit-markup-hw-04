@@ -56,33 +56,34 @@ img {
 .logo {
   margin-left: 215px;
 
-  color:var( --secondary-text-color);
+  color: var(--secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  
 }
 
- .logo-part-first {
-   color:var(--accent-color);
- }
- 
-.main-nav, .nav, .nav-link, .nav-information  {
+.logo-part-first {
+  color: var(--accent-color);
+}
+
+.main-nav,
+.nav,
+.nav-link,
+.nav-information {
   display: flex;
   align-items: center;
-} 
+}
 .main-nav {
   align-items: center;
-  
 }
-.nav-link  {
+.nav-link {
   margin-left: 93px;
- }
+}
 
 .nav-link .item:not(:last-child) {
   margin-right: 50px;
-} 
+}
 
 .nav-link .link {
   display: block;
@@ -98,7 +99,7 @@ img {
 }
 
 .nav-link .link.current {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .nav-link a:hover,
@@ -106,11 +107,9 @@ color: var(--accent-color);
   color: var(--accent-color);
 }
 
-
-.nav-information  {
+.nav-information {
   margin-left: auto;
   margin-right: 215px;
-  
 }
 
 .nav-information-list:last-child {
@@ -133,9 +132,7 @@ color: var(--accent-color);
   color: var(--primery-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  
-  }
-
+}
 
 .nav-information-list:hover,
 .nav-information-list:focus {
@@ -143,11 +140,9 @@ color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-
 .nav-information-icon {
   color: currentColor;
   margin-right: 10px;
-  
 }
 
 /* Герой */
@@ -292,15 +287,14 @@ color: var(--accent-color);
   margin: 0px auto;
   padding: 0px;
   width: 270px;
-  
-  box-shadow: 0 2px 1px  rgba(0, 0, 0, 0.2), 
-  0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .team-list .item:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .team-images {
   margin-bottom: 30px;
@@ -332,21 +326,19 @@ color: var(--accent-color);
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
-  
-  
 }
 
 .team-icon {
   display: block;
-  padding:12px;
+  padding: 12px;
   border: none;
   width: 44px;
   height: 44px;
-  fill: #afb1b8 ;
+  fill: #afb1b8;
   border-radius: 50%;
 }
 
-.team-icon:not(:last-child){
+.team-icon:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -358,9 +350,9 @@ color: var(--accent-color);
 }
 
 .team-icon:hover,
-.team-icon:focus{
+.team-icon:focus {
   background-color: var(--accent-color);
-  fill:var(--wite-color);
+  fill: var(--wite-color);
 }
 
 /* Постоянные клиенты */
@@ -378,23 +370,24 @@ color: var(--accent-color);
 
 .regular-client-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color:var(--wite-color);
+  flex-wrap: wrap;
+  background-color: var(--wite-color);
   margin-bottom: 94px;
-  color:#AFB1B8;
+  color: #afb1b8;
 }
 
 .regular-client-item {
+  width: calc(100% / 6 - var(--card-set-gap) * 5 / 6);
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   cursor: pointer;
 }
 
-.regular-client-link{
+.regular-client-link {
   display: block;
-  fill:#afb1b8; 
+  padding: 16px 32px;
+  fill: #afb1b8;
 }
 .regular-client-item:not(:last-child) {
   margin-right: 30px;
@@ -406,9 +399,8 @@ color: var(--accent-color);
 
 .regular-client-item:hover,
 .regular-client-item:focus,
-.regular-client-svg:hover,
-.regular-client-svg:focus
-{
+.regular-client-link:hover,
+.regular-client-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -416,15 +408,13 @@ color: var(--accent-color);
 /* Футер */
 
 .footer {
- 
   background-color: #2f303a;
 }
 
 .footer-container {
   display: flex;
-  padding:0;
-  
- }
+  padding: 0;
+}
 
 .footer-adress {
   padding-top: 60px;
@@ -435,7 +425,7 @@ color: var(--accent-color);
 
 .footer-logo {
   display: block;
-  color:var( --secondary-text-color);
+  color: var(--secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -474,40 +464,30 @@ color: var(--accent-color);
 .footer-link {
   padding-top: 72px;
   padding-bottom: 100px;
- 
-
 }
-.footer-link-list{
+.footer-link-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
-.footer-links {
- color: var(--wite-color);
- }
 
 .footer-team-icon {
   display: block;
-  padding:12px;
+  padding: 12px;
   border: none;
   width: 44px;
   height: 44px;
-  color: inherit;
-  background-color:rgba(255, 255, 255, 0.1) ;
+  fill: var(--wite-color);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
- .footer-team-icon:hover{
-  background-color: var(--accent-color); 
- }
-
-.footer-links:not(:last-child){
-  margin-right: 10px;
+.footer-team-icon:hover {
+  background-color: var(--accent-color);
 }
 
-
-
+.footer-links:not(:last-child) {
+  margin-right: 10px;
+}
 
 /* Портфолио */
 
@@ -535,8 +515,8 @@ color: var(--accent-color);
 .button:focus {
   color: var(--primery-bg-color);
   background-color: var(--accent-color);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08), 
-  0 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Проекты */
@@ -591,8 +571,7 @@ color: var(--accent-color);
 .card-content {
   padding: 20px 24px;
 }
- .project .card:hover {
-
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06), 
-  0 1px 1px rgba(0, 0, 0, 0.12);
- }
+.project .card:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
+    0 1px 1px rgba(0, 0, 0, 0.12);
+}
