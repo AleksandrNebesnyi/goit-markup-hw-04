@@ -30,7 +30,7 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  min-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 94px;
@@ -49,18 +49,17 @@ img {
 
 /* Навигация */
 
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
 .logo {
-  margin-left: 215px;
-
   color: var(--secondary-text-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  padding: 23px 0;
 }
 
 .logo-part-first {
@@ -75,6 +74,7 @@ img {
   align-items: center;
 }
 .main-nav {
+  padding: 0;
   align-items: center;
 }
 .nav-link {
@@ -109,7 +109,6 @@ img {
 
 .nav-information {
   margin-left: auto;
-  margin-right: 215px;
 }
 
 .nav-information-list:last-child {
@@ -118,6 +117,9 @@ img {
 
 .nav-information-link {
   color: inherit;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -130,8 +132,6 @@ img {
   display: inline-flex;
   align-items: center;
   color: var(--primery-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav-information-list:hover,
@@ -264,6 +264,9 @@ img {
 }
 
 /* Наша команда */
+.team {
+  background-color: var(--primery-bg-color);
+}
 
 .team-title {
   color: var(--secondary-text-color);
@@ -283,6 +286,7 @@ img {
 
 .team-list .item {
   display: inline-block;
+  background-color: var(--wite-color);
 
   margin: 0px auto;
   padding: 0px;
@@ -326,6 +330,7 @@ img {
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team-icon {
@@ -372,7 +377,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--wite-color);
-  margin-bottom: 94px;
   color: #afb1b8;
 }
 
@@ -380,7 +384,7 @@ img {
   width: calc(100% / 6 - var(--card-set-gap) * 5 / 6);
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  /* padding: 16px 32px; */
+
   cursor: pointer;
 }
 
@@ -418,7 +422,7 @@ img {
 
 .footer-adress {
   padding-top: 60px;
-  padding-left: 215px;
+
   padding-bottom: 60px;
   margin-right: 70px;
 }
@@ -431,6 +435,9 @@ img {
   line-height: 1.2;
   text-decoration: none;
   margin-bottom: 20px;
+}
+.logo-part-two {
+  color: var(--wite-color);
 }
 
 .footer-list li {
@@ -511,6 +518,10 @@ img {
   border: 1px solid transparent;
   min-width: 73px;
 }
+.button-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button:hover,
 .button:focus {
   color: var(--primery-bg-color);
@@ -532,7 +543,7 @@ img {
 }
 
 .project .card {
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .project > .card {
